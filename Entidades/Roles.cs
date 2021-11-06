@@ -25,7 +25,6 @@ namespace Registro_Con_Login.Entidades
             DescripcionRol = string.Empty;
             EsActivo = false;
             FechaCreacion = DateTime.Now;
-
             Detalle = new List<RolesDetalle>();
         }
     }
