@@ -9,8 +9,9 @@
     <Grid>
         <Menu>
             <MenuItem Header="Registros">
-                <MenuItem Header="Registros de Usuarios"/>
-                <MenuItem Header="Consulta de Usuarios"/>
+                <MenuItem Header="Registro de Usuarios" Click="MenuItem_Click"/>
+                <MenuItem Header="Registro de Roles" Click="MenuItem_Click_1"/>
+                <MenuItem Header="Registro de Permisos" Click="MenuItem_Click_2"/>
             </MenuItem>
         </Menu>
     </Grid>

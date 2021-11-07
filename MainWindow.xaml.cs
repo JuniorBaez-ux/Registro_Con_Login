@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Registro_Con_Login.UI.Registros;
 
 namespace Registro_Con_Login
 {
@@ -23,6 +24,24 @@ namespace Registro_Con_Login
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            rUsuario usuarios = new rUsuario();
+            usuarios.Show();
+        }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            rRoles roles = new rRoles();
+            roles.Show();
+        }
+
+        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
+        {
+            rPermisos permisos = new rPermisos();
+            permisos.Show();
         }
     }
 }
