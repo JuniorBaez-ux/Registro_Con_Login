@@ -30,13 +30,13 @@ namespace Registro_Con_Login.UI
 
         private void IniciarSesionButton_Click(object sender, RoutedEventArgs e)
         {
-            if (usuarioTextBox.Text == "admin" && passwordTextBox.Text == "1234")
+            if (usuarioTextBox.Text == "admin" && passwordTextBox.Password == "1234")
             {
                 MainWindow first = new MainWindow();
                 first.Show();
                 this.Hide();
             }
-            else if (UsuariosBLL.ExisteUsuario(usuarioTextBox.Text, passwordTextBox.Text))
+            else if (UsuariosBLL.ExisteUsuario(usuarioTextBox.Text, passwordTextBox.Password))
             {
                 MainWindow first = new MainWindow();
                 first.Show();
