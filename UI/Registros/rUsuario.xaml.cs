@@ -26,9 +26,7 @@ namespace Registro_Con_Login.UI.Registros
         {
             InitializeComponent();
             this.DataContext = usuarios;
-            rolComboBox.ItemsSource = RolesBLL.GetRoles();
-            rolComboBox.SelectedValuePath = "RolID";
-            rolComboBox.DisplayMemberPath = "DescripcionRol";
+            LlenarComboRoles();
         }
 
         private void BuscarButton_Click(object sender, RoutedEventArgs e)
@@ -131,6 +129,13 @@ namespace Registro_Con_Login.UI.Registros
                 paso = false;
             }
             return paso;
+        }
+
+        private void LlenarComboRoles()
+        {
+            this.rolComboBox.ItemsSource = RolesBLL.GetRoles();
+            this.rolComboBox.SelectedValuePath = "RolID";
+            this.rolComboBox.DisplayMemberPath = "DescripcionRol";
         }
     }
 }
