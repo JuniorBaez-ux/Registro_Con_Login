@@ -141,9 +141,6 @@ namespace Registro_Con_Login.UI.Registros
             this.permisoIdComboBox.ItemsSource = PermisosBLL.GetPermisos();
             this.permisoIdComboBox.SelectedValuePath = "PermisosId";
             this.permisoIdComboBox.DisplayMemberPath = "DescripcionPermisos";
-
-            if (permisoIdComboBox.Items.Count > 0)
-                permisoIdComboBox.SelectedIndex = 0;
         }
     }
 }

@@ -27,8 +27,8 @@ namespace Registro_Con_Login.UI.Registros
             InitializeComponent();
             this.DataContext = usuarios;
             rolComboBox.ItemsSource = RolesBLL.GetRoles();
-            rolComboBox.DisplayMemberPath = "DescripcionRol";
             rolComboBox.SelectedValuePath = "RolID";
+            rolComboBox.DisplayMemberPath = "DescripcionRol";
         }
 
         private void BuscarButton_Click(object sender, RoutedEventArgs e)

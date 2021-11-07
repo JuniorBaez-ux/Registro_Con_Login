@@ -27,6 +27,10 @@ namespace Registro_Con_Login.DAL
                 new Permisos() { PermisosId = 2, Nombre = "Vende", DescripcionPermisos = "Con este permiso es posible vender" },
                 new Permisos() { PermisosId = 3, Nombre = "Compra", DescripcionPermisos = "Con este permiso es posible comprar" }
             );
+
+            modelBuilder.Entity<Roles>().HasData(
+                new Roles() { RolID = 1, DescripcionRol = "Con este permiso es posible modificar el precio" }
+            );
         }
     }
 }

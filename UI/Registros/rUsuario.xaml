@@ -34,7 +34,7 @@
 
                         <StackPanel Orientation="Horizontal" Margin="75,10">
                             <Label Content="Rol" VerticalAlignment="Center"/>
-                            <ComboBox x:Name="rolComboBox" Width="150" Height="25" SelectedValue="{Binding RolID}"/>
+                            <ComboBox x:Name="rolComboBox" Width="150" Height="25" SelectedValue="{Binding DescripcionRol}"/>
                         </StackPanel>
                     </StackPanel>
 
